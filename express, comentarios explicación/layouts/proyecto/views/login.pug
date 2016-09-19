@@ -1,0 +1,18 @@
+extends ./layout
+block CONTENIDO_VISTAS
+
+  form(action="/users" method="POST")
+    div(class="form-group")
+      label(for="email_active") Email : 
+      input(type="text", name="email", placeholder="Write your email here!", id="email_active", class="form-control")
+   
+    br
+
+    div(class="form-group")
+      label(for="password_active") Passw : 
+      input(type="password", name="password", placeholder="Your pass", id="password_active", class="form-control") 
+   
+    br 
+
+    div
+      input(type="submit" value="Iniciar sesión" class="btn btn-info")
